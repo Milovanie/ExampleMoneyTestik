@@ -1,0 +1,10 @@
+[-48, -105, -48, -80, -48, -77, -48, -66, -47, -128, -47, -116, -48, -75, 32]
+[-48, -105, -48, -80, -48, -77, -48, -66, -47, -128, -47, -116, -48, -75]
+
+
+	Object createAndFill = null;
+				Stream.of(clazz2).forEach(class1 ->
+						  createAndFill = createAndFill(type, class1));
+						field.set(instance, createAndFill);
+						
+						));

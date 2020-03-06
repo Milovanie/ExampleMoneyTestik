@@ -1,0 +1,37 @@
+		for (String[] strArray : lineWords) {
+			List<String> myList = Arrays.asList(strArray);
+			for (int i = 0; i < myList.size(); i++) {
+				if (myList.get(i).equals("1968")) {
+					System.out.println(myList.get(i));
+					for (String stroka : myList) {
+						System.out.println(stroka);
+					}
+				}
+			}
+		}
+
+		
+		
+		
+		я абажаю как вы рассказываете, вот такой момент : если в файле CSV не совпадут все колонки, например у вас массив получается из 9 , а может где то не совпадать, быть из 8  (не заполнен, null) и получится исключение...  предлагаю на такой случай 
+ String filePath = "moscow-buildings.csv";
+                         // тут в лист уже добавлен результат прочитанного из CSV
+  List<String[]> lineWords = readFromCSV(filePath);
+
+  for (String[] lineTokens : lineWords) {
+   Arrays.asList(lineTokens).contains("1928");
+   for (String strings : lineTokens) {
+    System.out.println(strings);
+   } 
+  }
+тут не важно под каким индексом , прокоментируйте ))
+
+
+		for (String[] lineTokens : lineWords) {
+			// Arrays.asList(lineTokens).contains("1928");
+			List<String> asList = Arrays.asList(lineTokens);
+
+			for (String strings : lineTokens) {
+				// System.out.println(strings);
+			} // in for
+		}

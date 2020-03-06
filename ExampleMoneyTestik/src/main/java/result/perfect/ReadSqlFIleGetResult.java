@@ -65,9 +65,6 @@ public class ReadSqlFIleGetResult {
 			con.close();
 			final long startTime = System.currentTimeMillis();
 
-			for (HashMap<String, Object> hashMap : convertResultListMap) {
-				// System.out.println(hashMap.entrySet() + " ");
-			}
 
 			for (Map<String, Object> map : convertResultListMap) {
 				for (Map.Entry<String, Object> entry : map.entrySet()) {
