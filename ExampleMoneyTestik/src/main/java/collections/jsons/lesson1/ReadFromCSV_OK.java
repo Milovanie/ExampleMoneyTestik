@@ -17,7 +17,6 @@ public class ReadFromCSV_OK {
 		String searchWord = "муниципальный";
 		List<String> readFromCSV2 = readFile(tempo);
 
-
 		List<String> matchesList = isNotContains(searchWord, readFromCSV2);
 
 		for (String stroka : matchesList) {
@@ -26,15 +25,15 @@ public class ReadFromCSV_OK {
 
 	}
 
-	/** print only if  contains */
+	/** print only if contains */
 	@SuppressWarnings("unused")
 	private static List<String> isContains(String searchWord, List<String> readFromCSV2) {
-		return readFromCSV2.stream().filter(it -> (it.contains(searchWord) ) ).collect(Collectors.toList());
+		return readFromCSV2.stream().filter(it -> (it.contains(searchWord))).collect(Collectors.toList());
 	}
-	
+
 	/** print only if NOT contains */
 	private static List<String> isNotContains(String searchWord, List<String> readFromCSV2) {
-		return readFromCSV2.stream().filter(it -> (!it.contains(searchWord) ) ).collect(Collectors.toList());
+		return readFromCSV2.stream().filter(it -> (!it.contains(searchWord))).collect(Collectors.toList());
 	}
 
 	/** read from File */
